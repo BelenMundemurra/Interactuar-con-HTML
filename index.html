@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactuar con HTML</title>
+
+    <style>
+        p {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tienda de tortas</h1>
+    <div>
+        <h2>Realice su pedido</h2>
+        <form action="">
+            <label for="tipo-torta">Tipo de torta: </label>
+            <select name="tipo-torta" id="tipo-torta">
+                <option value="0">Seleccionar torta</option>
+                <option value="Torta de chocolate">Torta de chocolate</option>
+                <option value="Torta de vainilla">Torta de vainilla</option>
+            </select>
+
+            <label for="cantidad">Cantiad: </label>
+            <input type="number" id="cantidad">
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre">
+
+            <input type="button" onclick="compra()" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </form>
+    </div>
+
+    <div id="resumen">
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
